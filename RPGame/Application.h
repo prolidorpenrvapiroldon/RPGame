@@ -6,7 +6,7 @@ class Application
 {
 protected:
 	sf::RenderWindow window;
-	GameState *currentState;
+	GameState *currentState = nullptr;
 public:
 	Application();
 
