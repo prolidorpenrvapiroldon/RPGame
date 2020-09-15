@@ -1,6 +1,6 @@
 #pragma once
 
-namespace Content
+extern struct Content
 {
 	void Load();
-}
+} Content;

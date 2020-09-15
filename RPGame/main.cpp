@@ -6,7 +6,7 @@ int main(int argc, char** argv)
 {
 	Application application;
 
-	Content::Load();
+	Content.Load();
 	application.Run();
 
 	return 0;
