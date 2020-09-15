@@ -1,6 +1,6 @@
 #pragma once
 
-enum GameObjectType {};
+enum GameObjectType { CAMERA };
 
 class GameObject
 {
