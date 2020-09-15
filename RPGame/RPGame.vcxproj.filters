@@ -13,6 +13,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Исходные файлы\GameObject">
+      <UniqueIdentifier>{187733d3-0308-4889-a475-4ecd84658014}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\GameObject">
+      <UniqueIdentifier>{eab687b6-c7a1-4369-9882-4c110c7855c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\GameState">
+      <UniqueIdentifier>{3ebbe106-0c24-4cda-a207-c0151d1fea7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\GameState">
+      <UniqueIdentifier>{6d5a36ec-cc89-47a6-afab-e03761c035ab}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -24,13 +36,16 @@
     <ClCompile Include="Content.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="GameState.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="GameObject.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="IPositioned.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraGameObject.cpp">
+      <Filter>Исходные файлы\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
@@ -49,6 +64,9 @@
     </ClInclude>
     <ClInclude Include="IPositioned.h">
       <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraGameObject.h">
+      <Filter>Файлы заголовков\GameObject</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
