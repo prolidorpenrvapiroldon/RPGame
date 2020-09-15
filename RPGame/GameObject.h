@@ -9,9 +9,8 @@ protected:
 public:
 	GameObject(GameObjectType type);
 
-	virtual void Initialize();
-	virtual void Update();
-	virtual void Draw();
-	virtual void Remove();
+	virtual void Initialize() = 0;
+	virtual void Update() = 0;
+	virtual void Draw() = 0;
+	virtual void Remove() = 0;
 };
-

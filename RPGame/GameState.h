@@ -1,7 +1,7 @@
 #pragma once
 #include <vector>
 #include "GameObject.h"
-#include "CameraGO.h"
+#include "CameraGameObject.h"
 
 enum GameStateType {};
 
@@ -9,7 +9,7 @@ class GameState
 {
 protected:
 	GameStateType type;
-	CameraGO* mainCamera = nullptr;
+	CameraGameObject* mainCamera = nullptr;
 	std::vector<GameObject*> objects;
 
 public:

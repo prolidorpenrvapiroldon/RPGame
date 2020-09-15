@@ -1,6 +1,5 @@
 #pragma once
 
-extern struct Content
-{
-	void Load();
-} Content;
+namespace Content {
+	extern void Load();
+};
