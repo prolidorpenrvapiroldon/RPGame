@@ -1,14 +1,16 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "GameState.h"
+#include "BetaGameState.h"
 
 class Application
 {
 protected:
 	sf::RenderWindow window;
-	GameState *currentState = nullptr;
+	GameState * state = nullptr;
 public:
 	Application();
+	~Application();
 
 	void HandleEvents();
 	void Update();

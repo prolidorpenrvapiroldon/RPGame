@@ -48,6 +48,9 @@
     <ClCompile Include="GameState.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="BetaGameState.cpp">
+      <Filter>Исходные файлы\GameState</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h">
@@ -67,6 +70,9 @@
     </ClInclude>
     <ClInclude Include="CameraGameObject.h">
       <Filter>Файлы заголовков\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="BetaGameState.h">
+      <Filter>Файлы заголовков\GameState</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
