@@ -1,5 +1,6 @@
 #pragma once
 #include <vector>
+#include "Content.h"
 #include "GameObject.h"
 #include "CameraGameObject.h"
 
@@ -9,15 +10,16 @@ class GameState
 {
 protected:
 	GameStateType type;
+	Content* content;
 	CameraGameObject* mainCamera = nullptr;
 	std::vector<GameObject*> objects;
 
 public:
 	GameState(GameStateType type);
 
-	virtual void Initialize() = 0;
-	virtual void Update() = 0;
-	virtual void Draw() = 0;
+	virtual void Initialize(Content& content) = 0;
+	virtual void Update(float delta_time) = 0;
+	virtual void Draw(sf::RenderWindow& window) = 0;
 	virtual void Remove() = 0;
 };
 

@@ -1,5 +1,13 @@
 #pragma once
+#include <SFML/Graphics.hpp>
+#include <string>
 
-namespace Content {
-	extern void Load();
+struct Content {
+	std::string CONTENT;
+	std::string IMAGE;
+
+	sf::Texture texture_tileset_1;
+	sf::Sprite sprite_tileset_1;
+
+	void Load();
 };

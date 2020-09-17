@@ -1,5 +1,6 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+#include "Content.h"
 #include "GameState.h"
 #include "BetaGameState.h"
 
@@ -7,7 +8,9 @@ class Application
 {
 protected:
 	sf::RenderWindow window;
-	GameState * state = nullptr;
+	GameState* state = nullptr;
+
+	Content content;
 public:
 	Application();
 	~Application();

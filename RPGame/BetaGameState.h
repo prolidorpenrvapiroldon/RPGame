@@ -1,5 +1,6 @@
 #pragma once
 #include "GameState.h"
+#include "TilemapGameObject.h"
 
 class BetaGameState : public GameState
 {
@@ -9,8 +10,8 @@ public:
 	BetaGameState();
 
 
-	void Initialize() override;
-	void Update() override;
-	void Draw() override;
+	void Initialize(Content& content) override;
+	void Update(float delta_time) override;
+	void Draw(sf::RenderWindow& window) override;
 	void Remove() override;
 };

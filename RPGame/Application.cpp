@@ -1,9 +1,10 @@
 #include "Application.h"
 
-
 Application::Application()
 {
 	this->window.create(sf::VideoMode(800, 600), "RPGame");
+	this->content.Load();
+
 	this->state = new BetaGameState();
 }
 
@@ -28,21 +29,21 @@ void Application::HandleEvents()
 
 void Application::Update()
 {
-	this->state->Update();
+	this->state->Update(1);
 }
 
 void Application::Draw()
 {
 	this->window.clear();
 
-	this->state->Draw();
+	this->state->Draw(this->window);
 
 	this->window.display();
 }
 
 void Application::Run()
 {
-	this->state->Initialize();
+	this->state->Initialize(this->content);
 
 	while (this->window.isOpen())
 	{
