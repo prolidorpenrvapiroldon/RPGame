@@ -13,11 +13,11 @@ void CameraGameObject::Initialize()
 {
 }
 
-void CameraGameObject::Update()
+void CameraGameObject::Update(float delta_time)
 {
 }
 
-void CameraGameObject::Draw()
+void CameraGameObject::Draw(sf::RenderWindow& window, GameObject* camera)
 {
 }
 

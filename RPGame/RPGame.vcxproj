@@ -159,6 +159,7 @@
     <ClCompile Include="GameState.cpp" />
     <ClCompile Include="IPositioned.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="TilemapGameObject.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h" />
@@ -168,6 +169,7 @@
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="GameState.h" />
     <ClInclude Include="IPositioned.h" />
+    <ClInclude Include="TilemapGameObject.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

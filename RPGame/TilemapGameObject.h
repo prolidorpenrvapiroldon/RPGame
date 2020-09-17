@@ -1,14 +1,16 @@
 #pragma once
 #include "GameObject.h"
-#include "IPositioned.h"
+#include <SFML/Graphics.hpp>
 
-class CameraGameObject : public GameObject, public IPositioned
+class TilemapGameObject : public GameObject
 {
 protected:
+	sf::Sprite tileset;
+	const int width, height;
+	int** data;
 
 public:
-	CameraGameObject();
-	CameraGameObject(float x, float y);
+	TilemapGameObject(sf::Sprite& tileset, int width, int height, int** data);
 
 	void Initialize() override;
 	void Update(float delta_time) override;
