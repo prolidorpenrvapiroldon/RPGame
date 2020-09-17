@@ -8,6 +8,9 @@ BetaGameState::BetaGameState() : GameState(GameStateType::Beta)
 void BetaGameState::Initialize(Content& content)
 {
 	this->content = &content;
+
+	this->objects.push_back(new TilemapGameObject(this->content->sprite_tileset_1, 0, 0, nullptr));
+	this->objects[0]->Initialize();
 }
 
 void BetaGameState::Update(float delta_time)

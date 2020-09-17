@@ -16,6 +16,7 @@ void TilemapGameObject::Update(float delta_time)
 
 void TilemapGameObject::Draw(sf::RenderWindow& window, GameObject* camera)
 {
+	this->tileset.setPosition(0, 0);
 	window.draw(this->tileset);
 }
 
