@@ -1,15 +1,20 @@
 # Basic
  Simple Role Play Game.
  
- - Latest news:
-   - Implemented **Tileset:GameObject** class
+##### - Latest news:
+ 
+   - Implemented ***`ImageDataManager:DataManager`***
+   - Implemented ***`DataManage`*** class
+   - Implemented ***`Tileset:GameObject`*** class
+ 
+##### - Author:
+   - Dmitry Kalugin ([prolidorpenrvapiroldon](https://github.com/prolidorpenrvapiroldon))
 
 ## Plans
- You can see To Do list **[Here](./TODO.md)** 
- 
+ You can find the [ToDo List](./TODO.md) in repository.
  
 ## Releases
-Not released yet
+ Not released yet
 
 ## Compilation
  - Visual Studio 2019 (I'm using 16.7 now)
