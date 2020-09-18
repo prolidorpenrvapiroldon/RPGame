@@ -25,6 +25,18 @@
     <Filter Include="Файлы заголовков\GameState">
       <UniqueIdentifier>{6d5a36ec-cc89-47a6-afab-e03761c035ab}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\DataManager">
+      <UniqueIdentifier>{f0a51135-7a99-4ab3-b051-873d4d4654d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\DataManger">
+      <UniqueIdentifier>{ef75e266-3a41-4f0e-bd8c-94192a5d52e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Interface">
+      <UniqueIdentifier>{aacda711-a671-4592-8191-85f2e2161571}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Interface">
+      <UniqueIdentifier>{92f19e93-ee20-4cae-8d0f-6686b570bd42}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -34,9 +46,6 @@
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="Content.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="IPositioned.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="CameraGameObject.cpp">
@@ -54,15 +63,24 @@
     <ClCompile Include="GameState.cpp">
       <Filter>Исходные файлы\GameState</Filter>
     </ClCompile>
+    <ClCompile Include="DataManager.cpp">
+      <Filter>Исходные файлы\DataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageDataManager.cpp">
+      <Filter>Исходные файлы\DataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="IPositioned.cpp">
+      <Filter>Исходные файлы\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageData.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="Content.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="IPositioned.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="CameraGameObject.h">
@@ -79,6 +97,18 @@
     </ClInclude>
     <ClInclude Include="GameState.h">
       <Filter>Файлы заголовков\GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManager.h">
+      <Filter>Файлы заголовков\DataManger</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageDataManager.h">
+      <Filter>Файлы заголовков\DataManger</Filter>
+    </ClInclude>
+    <ClInclude Include="IPositioned.h">
+      <Filter>Файлы заголовков\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageData.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -155,8 +155,11 @@
     <ClCompile Include="BetaGameState.cpp" />
     <ClCompile Include="CameraGameObject.cpp" />
     <ClCompile Include="Content.cpp" />
+    <ClCompile Include="DataManager.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="GameState.cpp" />
+    <ClCompile Include="ImageData.cpp" />
+    <ClCompile Include="ImageDataManager.cpp" />
     <ClCompile Include="IPositioned.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="TilemapGameObject.cpp" />
@@ -166,8 +169,11 @@
     <ClInclude Include="BetaGameState.h" />
     <ClInclude Include="CameraGameObject.h" />
     <ClInclude Include="Content.h" />
+    <ClInclude Include="DataManager.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="GameState.h" />
+    <ClInclude Include="ImageData.h" />
+    <ClInclude Include="ImageDataManager.h" />
     <ClInclude Include="IPositioned.h" />
     <ClInclude Include="TilemapGameObject.h" />
   </ItemGroup>
