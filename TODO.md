@@ -2,11 +2,11 @@
  - Tile by tile draw
 
 ## Camera:
- - Scaling
+ - ~~Scaling~~
 
 
 ## Data Manager:
- - Image Manager
+ - ~~Image Manager~~
  - Audio Manager
  - Font Manager
  - Tileset Manager

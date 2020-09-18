@@ -3,6 +3,7 @@
 BetaGameState::BetaGameState() : GameState(GameStateType::Beta)
 {
 	this->mainCamera = new CameraGameObject();
+	this->objects.push_back(this->mainCamera);
 }
 
 void BetaGameState::Initialize(Content& content)

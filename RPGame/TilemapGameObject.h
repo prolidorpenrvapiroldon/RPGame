@@ -1,6 +1,7 @@
 #pragma once
-#include "GameObject.h"
 #include <SFML/Graphics.hpp>
+#include "GameObject.h"
+#include "CameraGameObject.h"
 
 class TilemapGameObject : public GameObject
 {

@@ -4,10 +4,15 @@ CameraGameObject::CameraGameObject() : GameObject(GameObjectType::CAMERA), IPosi
 {
 }
 
-CameraGameObject::CameraGameObject(float x, float y) : GameObject(GameObjectType::CAMERA), IPositioned(x, y)
+CameraGameObject::CameraGameObject(float x, float y, float scale=1) : GameObject(GameObjectType::CAMERA), IPositioned(x, y)
 {
+	this->scale = scale;
 }
 
+float CameraGameObject::getScale()
+{
+	return this->scale;
+}
 
 void CameraGameObject::Initialize()
 {

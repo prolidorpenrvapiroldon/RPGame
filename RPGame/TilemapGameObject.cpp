@@ -16,7 +16,10 @@ void TilemapGameObject::Update(float delta_time)
 
 void TilemapGameObject::Draw(sf::RenderWindow& window, GameObject* camera)
 {
+	float scale = ((CameraGameObject*)camera)->getScale();
+
 	this->tileset.setPosition(0, 0);
+	this->tileset.setScale(scale, scale);
 	window.draw(this->tileset);
 }
 
