@@ -2,7 +2,7 @@
 
 BetaGameState::BetaGameState() : GameState(GameStateType::Beta)
 {
-	this->mainCamera = new CameraGameObject();
+	this->mainCamera = new CameraGameObject(800, 600); // DEBUG
 	this->objects.push_back(this->mainCamera);
 }
 
@@ -32,8 +32,7 @@ void BetaGameState::Draw(sf::RenderWindow& window)
 
 void BetaGameState::Remove()
 {
-	delete this->mainCamera;
-	for (int i = 0; i < this->objects.size(); i++)
+	for (int i = this->objects.size() - 1; i >= 0; i--)
 	{
 		this->objects[i]->Remove();
 		delete this->objects[i];

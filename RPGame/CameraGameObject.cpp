@@ -1,12 +1,11 @@
 #include "CameraGameObject.h"
 
-CameraGameObject::CameraGameObject() : GameObject(GameObjectType::CAMERA), IPositioned()
+CameraGameObject::CameraGameObject(int width, int height) : GameObject(GameObjectType::CAMERA), IPositioned(0, 0, width, height)
 {
 }
 
-CameraGameObject::CameraGameObject(float x, float y, float scale=1) : GameObject(GameObjectType::CAMERA), IPositioned(x, y)
+CameraGameObject::CameraGameObject(float x, float y, int width, int height) : GameObject(GameObjectType::CAMERA), IPositioned(x, y, width, height)
 {
-	this->scale = scale;
 }
 
 float CameraGameObject::getScale()

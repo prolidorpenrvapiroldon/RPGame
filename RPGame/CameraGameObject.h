@@ -5,11 +5,11 @@
 class CameraGameObject : public GameObject, public IPositioned
 {
 protected:
-	float scale;
+	float scale = 1;
 
 public:
-	CameraGameObject();
-	CameraGameObject(float x, float y, float scale);
+	CameraGameObject(int width, int height);
+	CameraGameObject(float x, float y, int width, int height);
 
 	float getScale();
 

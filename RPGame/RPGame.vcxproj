@@ -162,6 +162,7 @@
     <ClCompile Include="ImageDataManager.cpp" />
     <ClCompile Include="IPositioned.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Vector.cpp" />
     <ClCompile Include="TilemapGameObject.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -175,6 +176,7 @@
     <ClInclude Include="ImageData.h" />
     <ClInclude Include="ImageDataManager.h" />
     <ClInclude Include="IPositioned.h" />
+    <ClInclude Include="Vector.h" />
     <ClInclude Include="TilemapGameObject.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
