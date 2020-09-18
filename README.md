@@ -2,7 +2,8 @@
  Simple Role Play Game.
  
 ##### - Latest news:
- 
+   - ***`IPositioned`*** now can handle camera transform
+   - Crash fix with ***`BetaGameState.mainCamera`*** on window close
    - Implemented ***`ImageDataManager:DataManager`***
    - Implemented ***`DataManage`*** class
    - Implemented ***`Tileset:GameObject`*** class
