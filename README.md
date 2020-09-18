@@ -1,5 +1,9 @@
 # Basic
+
  Simple Role Play Game.
+
+ ![GitHub search hit counter](https://img.shields.io/github/search/prolidorpenrvapiroldon/RPGame/class)
+ ![GitHub search hit counter](https://img.shields.io/github/search/prolidorpenrvapiroldon/RPGame/interface)
  
 ##### - Latest news:
    - ***`IPositioned`*** now can handle camera transform
