@@ -1,26 +1,28 @@
-# Basic
-
- Simple Role Play Game.
+# Role Play Game
 
  ![GitHub search hit counter](https://img.shields.io/github/search/prolidorpenrvapiroldon/RPGame/class)
  ![GitHub search hit counter](https://img.shields.io/github/search/prolidorpenrvapiroldon/RPGame/interface)
  
-##### - Latest news:
+##### - Latest news -
    - ***`IPositioned`*** now can handle camera transform
    - Crash fix with ***`BetaGameState.mainCamera`*** on window close
    - Implemented ***`ImageDataManager:DataManager`***
-   - Implemented ***`DataManage`*** class
+   - Implemented ***`DataManager`*** class
    - Implemented ***`Tileset:GameObject`*** class
  
-##### - Author:
-   - Dmitry Kalugin ([prolidorpenrvapiroldon](https://github.com/prolidorpenrvapiroldon))
+##### - Author -
+ Dmitry Kalugin ([prolidorpenrvapiroldon](https://github.com/prolidorpenrvapiroldon))
 
-## Plans
- You can find the [ToDo List](./TODO.md) in repository.
+
+##### - License -
+ Please read the [License](./LICENSE.md)
+
+##### - Plans -
+ You can find the [Todo List](./TODO.md) in repository.
  
-## Releases
+##### - Releases -
  Not released yet
 
-## Compilation
+##### - Compilation -
  - Visual Studio 2019 (I'm using 16.7 now)
  - SFML 2.5.1 pre-compiled for Visual Studio 2019
