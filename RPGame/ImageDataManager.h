@@ -1,6 +1,5 @@
 #pragma once
 #include <SFML/Graphics.hpp>
-#include <string>
 #include "DataManager.h"
 #include "ImageData.h"
 

@@ -2,20 +2,19 @@
 #include <SFML/Graphics.hpp>
 #include "GameObject.h"
 #include "CameraGameObject.h"
+#include "Tileset.h"
 
 class TilemapGameObject : public GameObject
 {
 protected:
-	sf::Sprite tileset;
 	const int width, height;
-	int** data;
+	Tileset* tileset;
 
 public:
-	TilemapGameObject(sf::Sprite& tileset, int width, int height, int** data);
+	TilemapGameObject(Tileset* tileset, int width, int height);
 
 	void Initialize() override;
 	void Update(float delta_time) override;
 	void Draw(sf::RenderWindow& window, GameObject* camera) override;
 	void Remove() override;
 };
-

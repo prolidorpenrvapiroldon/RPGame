@@ -75,8 +75,11 @@
     <ClCompile Include="ImageData.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Vector.cpp">
+    <ClCompile Include="Tileset.cpp">
       <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="TilesetDataManager.cpp">
+      <Filter>Исходные файлы\DataManager</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -113,8 +116,11 @@
     <ClInclude Include="ImageData.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Vector.h">
+    <ClInclude Include="Tileset.h">
       <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="TilesetDataManager.h">
+      <Filter>Файлы заголовков\DataManger</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

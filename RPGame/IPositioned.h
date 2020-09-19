@@ -1,12 +1,11 @@
 #pragma once
 #include "GameObject.h"
-#include "Vector.h"
 
 class IPositioned
 {
 protected:
 	float x = 0, y = 0, width = 0, height = 0;
-	Vector position, size;
+	sf::Vector2<float> position, size;
 public:
 	IPositioned();
 	IPositioned(float x, float y);
@@ -15,10 +14,10 @@ public:
 
 	void setPosition(float x, float y);
 	void setSize(float width, float height);
-	Vector getPosition();
-	Vector getSize();
+	sf::Vector2<float> getPosition();
+	sf::Vector2<float> getSize();
 
 	bool inCameraBounds(GameObject* camera);
-	Vector getPosition(GameObject* camera);
-	Vector getSize(GameObject* camera);
+	sf::Vector2<float> getPosition(GameObject* camera);
+	sf::Vector2<float> getSize(GameObject* camera);
 };

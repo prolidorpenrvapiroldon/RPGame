@@ -20,6 +20,8 @@
 [Rr]eleases/*
 RPGame/x64/
 RPGame/x86/
+x64/*/*.exe
+x86/*/*.exe
 
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/

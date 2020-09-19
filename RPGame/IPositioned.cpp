@@ -1,22 +1,16 @@
 #include "IPositioned.h"
 #include "CameraGameObject.h"
 
-IPositioned::IPositioned()
+IPositioned::IPositioned() : position(0, 0), size(0, 0)
 {
-	this->position = Vector(0, 0);
-	this->size = Vector(0, 0);
 }
 
-IPositioned::IPositioned(float x, float y)
+IPositioned::IPositioned(float x, float y) : position(x, y), size(0, 0)
 {
-	this->position = Vector(x, y);
-	this->size = Vector(0, 0);
 }
 
-IPositioned::IPositioned(float x, float y, float width, float height)
+IPositioned::IPositioned(float x, float y, float width, float height) : position(x, y), size(width, height)
 {
-	this->position = Vector(x, y);
-	this->size = Vector(width, height);
 }
 
 void IPositioned::setPosition(float x, float y)
@@ -31,12 +25,12 @@ void IPositioned::setSize(float width, float height)
 	this->size.y = y;
 }
 
-Vector IPositioned::getPosition()
+sf::Vector2<float> IPositioned::getPosition()
 {
 	return this->position;
 }
 
-Vector IPositioned::getSize()
+sf::Vector2<float> IPositioned::getSize()
 {
 	return this->size;
 }
@@ -46,8 +40,9 @@ bool IPositioned::inCameraBounds(GameObject* camera)
 {
 	IPositioned* _camera = (CameraGameObject*)camera;
 
-	Vector cameraPosition = _camera->getPosition();
-	Vector cameraSize = _camera->getSize();
+	sf::Vector2<float> cameraPosition = _camera->getPosition();
+	sf::Vector2<float> cameraSize = _camera->getSize();
+
 	return (
 		this->position.x + this->size.x >= cameraPosition.x &&
 		this->position.y + this->size.y >= cameraPosition.y &&
@@ -56,12 +51,12 @@ bool IPositioned::inCameraBounds(GameObject* camera)
 		);
 }
 
-Vector IPositioned::getPosition(GameObject* camera)
+sf::Vector2<float> IPositioned::getPosition(GameObject* camera)
 {
 	return this->position * ((CameraGameObject*)camera)->getScale();
 }
 
-Vector IPositioned::getSize(GameObject* camera)
+sf::Vector2<float> IPositioned::getSize(GameObject* camera)
 {
 	return this->size * ((CameraGameObject*)camera)->getScale();
 }

@@ -1,6 +1,6 @@
 #include "TilemapGameObject.h"
 
-TilemapGameObject::TilemapGameObject(sf::Sprite& tileset, int width, int height, int** data) : GameObject(TILEMAP), width(width), height(height)
+TilemapGameObject::TilemapGameObject(Tileset* tileset, int width, int height) : GameObject(TILEMAP), width(width), height(height)
 {
 	this->tileset = tileset;
 }
@@ -17,10 +17,11 @@ void TilemapGameObject::Draw(sf::RenderWindow& window, GameObject* camera)
 {
 	float scale = ((CameraGameObject*)camera)->getScale();
 
-	this->tileset.setPosition(0, 0);
-	this->tileset.setScale(scale, scale);
+	sf::Sprite* tile = this->tileset->getTile(0, 0);
+	tile->setPosition(0, 0);
+	tile->setScale(scale, scale);
 
-	window.draw(this->tileset);
+	window.draw(*tile);
 }
 
 void TilemapGameObject::Remove()

@@ -3,14 +3,14 @@
 #include <string>
 #include "ImageData.h"
 #include "ImageDataManager.h"
+#include "TilesetDataManager.h"
 
-struct Content {
-	std::string CONTENT;
-	std::string IMAGE;
-
+struct Content
+{
 	ImageDataManager imageManager;
+	TilesetDataManager tilesetManager;
 
-	ImageData* tileset_1;
+	Tileset* tileset_1;
 
 	void Load();
 };
