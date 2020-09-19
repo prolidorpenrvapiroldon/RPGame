@@ -4,6 +4,8 @@
  ![GitHub search hit counter](https://img.shields.io/github/search/prolidorpenrvapiroldon/RPGame/interface)
  
 ##### - Latest news -
+   - ***`Tilemap`*** stores ***`Tileset`*** data
+   - Implemented ***`Tileset`*** class and ***`TilesetDataManager`*** class
    - ***`IPositioned`*** now can handle camera transform
    - Crash fix with ***`BetaGameState.mainCamera`*** on window close
    - Implemented ***`ImageDataManager:DataManager`***
